@@ -27,8 +27,8 @@ FERIADOS_GT = {
 }
 
 # Carpeta de entrada y salida
-input_folder = "./data/2024/sucio"
-output_folder = "./data/2024/limpio"
+input_folder = "./data/2022/sucio"
+output_folder = "./data/2022/limpio"
 Path(output_folder).mkdir(parents=True, exist_ok=True)
 
 # =======================
