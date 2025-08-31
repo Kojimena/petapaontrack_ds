@@ -1,19 +1,40 @@
-import joblib
-import pandas as pd
-import numpy as np
+import os, joblib, pandas as pd, numpy as np, requests
+from datetime import datetime, date
+from zoneinfo import ZoneInfo
+from dotenv import load_dotenv
+
+# =========================
+# 0) CONFIG 
+# =========================
+TZ = ZoneInfo("America/Guatemala")
+
+# Feriados Guatemala (MM-DD -> nombre)
+FERIADOS_GT = {
+    "01-01": "Año Nuevo",
+    "01-15": "Día del Cristo Negro",
+    "05-01": "Día del Trabajo",
+    "06-30": "Día del Ejército",
+    "09-15": "Día de la Independencia",
+    "10-20": "Revolución de 1944",
+    "11-01": "Día de Todos los Santos",
+    "12-25": "Navidad",
+}
+
+load_dotenv()
+WWO_KEY = os.getenv("CLIMATE_API_KEY")  # World Weather Online
 
 # =========================
 # 1) CARGA MODELO
 # =========================
-bundle = joblib.load("data_analysis/models/rascacielos.joblib")
+bundle = joblib.load(os.path.expanduser("./data_analysis/models/rascacielos.joblib"))
 pipe = bundle["pipeline"]
 cat_cols = bundle["cat_cols"]
 num_cols = bundle["num_cols"]
 
 # =========================
-# 2) LOOKUP: promedio por (dow, month, hora) de los últimos N años
+# 2) LOOKUP HISTÓRICO
 # =========================
-HIST_CSV = "data/by_game/rascacielos.csv"
+HIST_CSV = os.path.expanduser("./data/by_game/rascacielos.csv")
 
 def preparar_historico_largo(hist_df: pd.DataFrame) -> pd.DataFrame:
     df = hist_df.copy()
@@ -40,15 +61,11 @@ def preparar_historico_largo(hist_df: pd.DataFrame) -> pd.DataFrame:
     return pd.concat(registros, ignore_index=True)
 
 def construir_lookup(hist_largo: pd.DataFrame, lookback_years: int = 3):
-    # toma los últimos N años disponibles en el histórico
     max_year = int(hist_largo["year"].max())
-    years = list(range(max_year - lookback_years, max_year + 1))  # incluye max_year
+    years = list(range(max_year - lookback_years, max_year + 1))
     sub = hist_largo[hist_largo["year"].isin(years)].copy()
 
-    # promedio por (dow, month, hora)
     grp = sub.groupby(["dow","month","hora"])[["asistencia_h","ciclos_h"]].mean()
-
-    # fallback
     grp_dow_h = sub.groupby(["dow","hora"])[["asistencia_h","ciclos_h"]].mean()
     grp_h     = sub.groupby(["hora"])[["asistencia_h","ciclos_h"]].mean()
     glob      = sub[["asistencia_h","ciclos_h"]].mean()
@@ -65,10 +82,43 @@ except Exception as e:
     HIST_LARGO = None
     LOOKUP = None
 
+# =========================
+# 2.1) CLIMA (WWO)
+# =========================
+def obtener_clima_wwo(api_key, fecha_dt: date, lugar="Petapa,Guatemala"):
+    """World Weather Online - past-weather (tp=24) para la fecha dada."""
+    if not api_key:
+        return {"temperatura_max": None, "temperatura_min": None, "condiciones_cielo": None, "prob_precipitacion": None}
+
+    url = "http://api.worldweatheronline.com/premium/v1/past-weather.ashx"
+    params = {
+        "key": api_key,
+        "q": lugar,
+        "format": "json",
+        "date": fecha_dt.strftime("%Y-%m-%d"),
+        "tp": 24
+    }
+    try:
+        r = requests.get(url, params=params, timeout=15)
+        r.raise_for_status()
+        data = r.json()
+        clima_dia = data["data"]["weather"][0]
+        detalle = clima_dia["hourly"][0]
+        return {
+            "temperatura_max": float(clima_dia.get("maxtempC")) if clima_dia.get("maxtempC") is not None else None,
+            "temperatura_min": float(clima_dia.get("mintempC")) if clima_dia.get("mintempC") is not None else None,
+            "condiciones_cielo": detalle["weatherDesc"][0]["value"] if detalle.get("weatherDesc") else None,
+            "prob_precipitacion": int(detalle.get("chanceofrain", 0)) if detalle.get("chanceofrain") is not None else None
+        }
+    except Exception as e:
+        print(f"❌ Error al obtener clima: {e}")
+        return {"temperatura_max": None, "temperatura_min": None, "condiciones_cielo": None, "prob_precipitacion": None}
+
+# =========================
+# 2.2) RELLENAR 
+# =========================
 def rellenar_expecteds(df_nuevo: pd.DataFrame) -> pd.DataFrame:
-    """Rellena asistencia_h y ciclos_h con promedio de últimos 3 años por (dow, month, hora)."""
     if LOOKUP is None:
-        # sin lookup, no hacemos nada
         return df_nuevo
 
     out = df_nuevo.copy()
@@ -91,35 +141,27 @@ def rellenar_expecteds(df_nuevo: pd.DataFrame) -> pd.DataFrame:
     if "asistencia_h" not in out.columns: out["asistencia_h"] = np.nan
     if "ciclos_h"     not in out.columns: out["ciclos_h"]     = np.nan
 
-    # lookup
     vals_a, vals_c = [], []
     for _, r in out.iterrows():
         key = (int(r["_dow_auto"]), int(r["month"]), str(r["hora"]))
         val = None
-        # 1) (dow, month, hora)
         if LOOKUP["dow_month_hora"].index.isin([key]).any():
             val = LOOKUP["dow_month_hora"].loc[key]
-        # 2) (dow, hora)
         if val is None or (isinstance(val, pd.Series) and val.isna().all()):
             key2 = (int(r["_dow_auto"]), str(r["hora"]))
             if LOOKUP["dow_hora"].index.isin([key2]).any():
                 val = LOOKUP["dow_hora"].loc[key2]
-        # 3) (hora)
         if val is None or (isinstance(val, pd.Series) and val.isna().all()):
             if str(r["hora"]) in LOOKUP["hora"].index:
                 val = LOOKUP["hora"].loc[str(r["hora"])]
-        # 4) global
         if val is None or (isinstance(val, pd.Series) and val.isna().all()):
             val = LOOKUP["global"]
 
-        print(f"Promedio usado para dow={r['_dow_auto']}, mes={r['month']}, hora={r['hora']}:")
-        print(val.round(0))
         vals_a.append(float(val.get("asistencia_h", np.nan).round(0)))
         vals_c.append(float(val.get("ciclos_h", np.nan).round(0)))
 
     out["asistencia_h"] = out["asistencia_h"].fillna(pd.Series(vals_a, index=out.index))
     out["ciclos_h"]     = out["ciclos_h"].fillna(pd.Series(vals_c, index=out.index))
-
     return out.drop(columns=["_month_auto","_dow_auto"], errors="ignore")
 
 # =========================
@@ -128,7 +170,6 @@ def rellenar_expecteds(df_nuevo: pd.DataFrame) -> pd.DataFrame:
 def predecir(df_nuevo: pd.DataFrame) -> pd.Series:
     df_in = rellenar_expecteds(df_nuevo)
 
-    # si faltara alguna columna esperada, la creamos para no romper el pipeline
     for c in cat_cols:
         if c not in df_in.columns:
             df_in[c] = pd.NA
@@ -141,19 +182,40 @@ def predecir(df_nuevo: pd.DataFrame) -> pd.Series:
     return pd.Series(np.round(pred, 2), index=df_nuevo.index, name="prediccion")
 
 # =========================
-# 4) EJEMPLO DE USO
+# 4) ENTRADA DINÁMICA
 # =========================
-df_nuevo = pd.DataFrame({
-    "day_of_week": ["Sunday"],
-    "hora": ["13:00"],
-    "es_festivo": [False],
-    "condiciones_cielo": [""],
-    "nombre_festivo": [""],
-    "month": [8],
-    "day": [31],
-    "temperatura_max": [25.0],
-    "temporada_alta": [0],
-})
+def construir_fila_actual():
+    now = datetime.now(TZ)
+    fecha_hoy = now.date()  # date
+    mes_dia = now.strftime("%m-%d")
+    festivo = FERIADOS_GT.get(mes_dia)
 
-predicciones = predecir(df_nuevo)
-print(predicciones)
+    # Clima del día
+    clima = obtener_clima_wwo(WWO_KEY, fecha_hoy, lugar="Petapa,Guatemala")
+
+    # day_of_week 
+    day_of_week = now.strftime("%A")
+    hora_hh = now.strftime("%H:00")
+
+    fila = {
+        "day_of_week": [day_of_week],
+        "hora": [hora_hh],
+        "es_festivo": [festivo is not None],
+        "condiciones_cielo": [clima.get("condiciones_cielo")],
+        "nombre_festivo": [festivo if festivo else ""],
+        "month": [now.month],
+        "day": [now.day],
+        "temperatura_max": [clima.get("temperatura_max")],
+        "temporada_alta": [0],
+        "prob_precipitacion": [clima.get("prob_precipitacion")]
+    }
+    return pd.DataFrame(fila)
+
+if __name__ == "__main__":
+    df_nuevo = construir_fila_actual()
+    predicciones = predecir(df_nuevo)
+    print({
+        "timestamp": datetime.now(TZ).isoformat(),
+        "input_row": df_nuevo.to_dict(orient="records")[0],
+        "prediccion": float(predicciones.iloc[0])
+    })
