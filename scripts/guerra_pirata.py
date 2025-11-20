@@ -2,6 +2,7 @@ import os, joblib, pandas as pd, numpy as np, requests
 from datetime import datetime, date
 from zoneinfo import ZoneInfo
 from dotenv import load_dotenv
+from pb_helpers import set_time_by_name
 
 # =========================
 # 0) CONFIG 
@@ -26,7 +27,7 @@ WWO_KEY = os.getenv("CLIMATE_API_KEY")  # World Weather Online
 # =========================
 # 1) CARGA MODELO
 # =========================
-bundle = joblib.load(os.path.expanduser("data_analysis/models/raton_loroco.joblib"))
+bundle = joblib.load(os.path.expanduser("data_analysis/models/guerra_pirata.joblib"))
 pipe = bundle["pipeline"]
 cat_cols = bundle["cat_cols"]
 num_cols = bundle["num_cols"]
@@ -34,7 +35,7 @@ num_cols = bundle["num_cols"]
 # =========================
 # 2) LOOKUP HISTÓRICO
 # =========================
-HIST_CSV = os.path.expanduser("data/by_game/raton_loroco.csv")
+HIST_CSV = os.path.expanduser("data/by_game/guerra_pirata.csv")
 
 def preparar_historico_largo(hist_df: pd.DataFrame) -> pd.DataFrame:
     df = hist_df.copy()
@@ -214,8 +215,17 @@ def construir_fila_actual():
 if __name__ == "__main__":
     df_nuevo = construir_fila_actual()
     predicciones = predecir(df_nuevo)
-    print({
+    info = {
         "timestamp": datetime.now(TZ).isoformat(),
         "input_row": df_nuevo.to_dict(orient="records")[0],
         "prediccion": float(predicciones.iloc[0])
-    })
+    }
+    print(info)
+
+    # Actualizar PocketBase
+    try:
+        GAME_NAME = "Guerra Pirata"
+        resp = set_time_by_name(GAME_NAME, float(predicciones.iloc[0]))
+        print("Actualizado en PocketBase. Nuevo time:", resp.get("time"))
+    except Exception as e:
+        print("Error actualizando PocketBase:", e)

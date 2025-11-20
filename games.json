@@ -1,0 +1,315 @@
+[
+  {
+    "name": "Ballon Wheel",
+    "description": "<p>Atracción Ballon Wheel del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "0.9", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "0.9", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> De 0 a 0.90 metros acompañado de un adulto y mayor a 0.90 metros pueden ingresar solos.</p><p><strong>Nota:</strong> No cuenta con casillero, pero es permitido el ingreso de gorras y lentes con cinta sujetadora o ganchos sujetadores, bolsos y carteras pequeñas (NO es permitido el ingreso de mochilas). Permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Samba Ballon",
+    "description": "<p>Atracción Samba Ballon del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "0.9", "condicion": "No puede ingresar" },
+      { "min": "0.9", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor de 0.90 metros NO puede ingresar, mayor a 0.90 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes con cinta sujetadora o ganchos sujetadores. Permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Loco Bus",
+    "description": "<p>Atracción Loco Bus del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "0.9", "condicion": "No puede ingresar" },
+      { "min": "0.9", "max": "1.05", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "1.05", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 0.90 metros NO puede ingresar, si mide entre 0.90 y 1.05 metros debe de ir acompañado de un adulto. Mayor a 1.05 metros puede ingresar solo.</p><p><strong>Nota:</strong> No cuenta con casillero, pero es permitido el ingreso de gorras y lentes con cinta sujetadora o ganchos sujetadores, bolsos y carteras pequeñas (NO es permitido el ingreso de mochilas). Permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Dragón",
+    "description": "<p>Atracción Dragón del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1.05", "condicion": "No puede ingresar" },
+      { "min": "1.05", "max": "1.2", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "1.2", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor de 1.05 metros NO puede ingresar, si mide entre 1.05 y 1.20 metros debe de ir acompañado de un adulto. Mayor a 1.20 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes únicamente con cinta sujetadora. Permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Comanche",
+    "description": "<p>Atracción Comanche del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1.2", "condicion": "No puede ingresar" },
+      { "min": "1.2", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 1.20 metros NO puede ingresar, mayor a 1.20 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes únicamente con cinta sujetadora. Permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Ratón Loroco",
+    "description": "<p>Atracción Ratón Loroco del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1.05", "condicion": "No puede ingresar" },
+      { "min": "1.05", "max": "1.2", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "1.2", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor de 1.05 metros NO puede ingresar, si mide entre 1.05 y 1.20 metros debe de ir acompañado de un adulto. Mayor a 1.20 metros puede ingresar solo.</p><p><strong>Nota:</strong> No cuenta con casillero y NO está permitido el ingreso de bolsos, carteras, gorras y lentes. Permitido el uso de lentes únicamente con cinta sujetadora. NO está permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Remolino",
+    "description": "<p>Atracción Remolino del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1.2", "condicion": "No puede ingresar" },
+      { "min": "1.2", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor de 1.20 metros NO puede ingresar. Mayor a 1.20 metros permitido ingresar solo.</p><p><strong>Nota:</strong> No cuenta con casillero y NO está permitido el ingreso de bolsos, carteras, gorras y lentes. Permitido el uso de lentes únicamente con cinta sujetadora. NO está permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Rascacielos",
+    "description": "<p>Atracción Rascacielos del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1.35", "condicion": "No puede ingresar" },
+      { "min": "1.35", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 1.35 metros NO puede ingresar. Mayor a 1.35 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes únicamente con cinta sujetadora. NO está permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Tronco Splash",
+    "description": "<p>Atracción Tronco Splash del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1.2", "condicion": "No puede ingresar" },
+      { "min": "1.2", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 1.20 metros NO puede ingresar. Mayor a 1.20 metros puede ingresar solo.</p><p><strong>Nota:</strong> No cuenta con casillero y NO está permitido el ingreso de bolsos, carteras, gorras y lentes. Permitido el uso de lentes únicamente con cinta sujetadora. NO está permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Bumperazo",
+    "description": "<p>Atracción Bumperazo del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1.15", "condicion": "No puede ingresar" },
+      { "min": "1.15", "max": "1.3", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "1.3", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 1.15 metros NO puede ingresar. Si mide entre 1.15 y 1.30 metros debe de ir acompañado de un adulto. Mayor a 1.30 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes únicamente con cinta sujetadora. NO está permitido el uso de sandalias o zapatos sueltos. NO está permitido personas mojadas y/o con zapato húmedo.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Brinkanguro",
+    "description": "<p>Atracción Brinkanguro del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1.05", "condicion": "No puede ingresar" },
+      { "min": "1.05", "max": "1.2", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "1.2", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 1.05 metros NO puede ingresar, si mide entre 1.05 y 1.20 metros debe de ir acompañado de un adulto. Mayor a 1.20 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes únicamente con cinta sujetadora. NO está permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Moto Bala",
+    "description": "<p>Atracción Moto Bala del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1.2", "condicion": "No puede ingresar" },
+      { "min": "1.2", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 1.20 metros NO puede ingresar. Mayor a 1.20 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes únicamente con cinta sujetadora. Permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Convoy",
+    "description": "<p>Atracción Convoy del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "0.9", "condicion": "Debe ir acompañado de un adulto en la parte de atrás del vehículo" },
+      { "min": "0.9", "max": "1.35", "condicion": "Debe ir en la cabina del vehículo" },
+      { "min": "1.35", "max": "999", "condicion": "Puede ingresar solo en la parte de atrás del vehículo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> De 0 a 0.90 metros debe de ir acompañado de un adulto en la parte de atrás del vehículo. Entre 0.90 y 1.35 metros debe ir en la cabina del vehículo. Mayor a 1.35 metros puede ingresar solo y debe ir en la parte de atrás del vehículo.</p><p><strong>Nota:</strong> No cuenta con casillero y NO está permitido el ingreso de bolsos, carteras, gorras y lentes. Permitido el uso de lentes con cinta sujetadora o ganchos sujetadores. Permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Bumpercitos",
+    "description": "<p>Atracción Bumpercitos del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "0.9", "condicion": "No puede ingresar" },
+      { "min": "0.9", "max": "1.4", "condicion": "Puede ingresar" },
+      { "min": "1.4", "max": "999", "condicion": "No puede ingresar" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 0.90 metros NO puede ingresar. Entre 0.90 y 1.40 metros permitido el ingreso. Mayor a 1.40 metros NO puede ingresar.</p><p><strong>Nota:</strong> No cuenta con casillero y NO está permitido el ingreso de bolsos, carteras, gorras y lentes. Permitido el uso de lentes únicamente con cinta sujetadora. NO está permitido el uso de sandalias o zapatos sueltos. NO está permitido niños mojados y/o con zapato húmedo.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Bici Mágica",
+    "description": "<p>Atracción Bici Mágica del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "0.9", "condicion": "No puede ingresar" },
+      { "min": "0.9", "max": "1.2", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "1.2", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 0.90 metros NO puede ingresar, si mide entre 0.90 y 1.20 metros debe de ir acompañado de un adulto. Mayor a 1.20 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes con cinta sujetadora o ganchos sujetadores. NO está permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Polo Norte",
+    "description": "<p>Atracción Polo Norte del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "0.9", "condicion": "No puede ingresar" },
+      { "min": "0.9", "max": "1.4", "condicion": "Puede ingresar" },
+      { "min": "1.4", "max": "999", "condicion": "No puede ingresar" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 0.90 metros NO puede ingresar. Entre 0.90 y 1.40 metros permitido el ingreso. Mayor a 1.40 metros NO puede ingresar.</p><p><strong>Nota:</strong> No cuenta con casillero y NO está permitido el ingreso de bolsos, carteras, gorras y lentes. Permitido el uso de lentes únicamente con cinta sujetadora. NO está permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Sol de Mi Barrio",
+    "description": "<p>Atracción Sol de Mi Barrio del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "0.9", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "0.9", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> De 0 a 0.90 metros acompañado de un adulto y mayor a 0.90 metros pueden ingresar solos.</p><p><strong>Nota:</strong> No cuenta con casillero, pero es permitido el ingreso de gorras y lentes con cinta sujetadora o ganchos sujetadores, bolsos y carteras pequeñas (NO es permitido el ingreso de mochilas). Permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Tifón",
+    "description": "<p>Atracción Tifón del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1.22", "condicion": "No puede ingresar" },
+      { "min": "1.22", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 1.22 metros NO puede ingresar. Mayor a 1.22 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes únicamente con cinta sujetadora. NO está permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Carrusel",
+    "description": "<p>Atracción Carrusel del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1.05", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "1.05", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> De 0 a 1.05 metros acompañado de un adulto. Mayor a 1.05 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes con cinta sujetadora o ganchos sujetadores. Permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Trencito",
+    "description": "<p>Atracción Trencito del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "0.9", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "0.9", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> De 0 a 0.90 metros acompañado de un adulto y mayor a 0.90 metros pueden ingresar solos.</p><p><strong>Nota:</strong> No cuenta con casillero, pero es permitido el ingreso de gorras y lentes con cinta sujetadora o ganchos sujetadores, bolsos y carteras pequeñas (NO es permitido el ingreso de mochilas). Permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Revoloteo",
+    "description": "<p>Atracción Revoloteo del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1.05", "condicion": "No puede ingresar" },
+      { "min": "1.05", "max": "1.2", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "1.2", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 1.05 metros NO puede ingresar, si mide entre 1.05 y 1.20 metros debe de ir acompañado de un adulto. Mayor a 1.20 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes únicamente con cinta sujetadora. NO está permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Guerra Pirata",
+    "description": "<p>Atracción Guerra Pirata del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "0.9", "condicion": "No puede ingresar" },
+      { "min": "0.9", "max": "1.2", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "1.2", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 0.90 metros NO puede ingresar, si mide entre 0.90 y 1.20 metros debe de ir acompañado de un adulto. Mayor a 1.20 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes únicamente con cinta sujetadora. NO está permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Faro Saltarín",
+    "description": "<p>Atracción Faro Saltarín del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1", "condicion": "No puede ingresar" },
+      { "min": "1", "max": "1.05", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "1.05", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 1 metro NO puede ingresar, si mide entre 1 y 1.05 metros debe de ir acompañado de un adulto. Mayor a 1.05 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes únicamente con cinta sujetadora. NO está permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Relámpago",
+    "description": "<p>Atracción Relámpago del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "1.3", "condicion": "No puede ingresar" },
+      { "min": "1.3", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 1.30 metros NO puede ingresar. Mayor a 1.30 metros puede ingresar solo.</p><p><strong>Nota:</strong> No cuenta con casillero y NO está permitido el ingreso de bolsos, carteras, gorras y lentes. Permitido el uso de lentes únicamente con cinta sujetadora. NO está permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  },
+  {
+    "name": "Casichoco",
+    "description": "<p>Atracción Casichoco del parque Mundo Petapa.</p>",
+    "time": 0,
+    "out_color": "15446F",
+    "closed": false,
+    "rules_height": [
+      { "min": "0", "max": "0.9", "condicion": "No puede ingresar" },
+      { "min": "0.9", "max": "1.2", "condicion": "Debe ir acompañado de un adulto" },
+      { "min": "1.2", "max": "999", "condicion": "Puede ingresar solo" }
+    ],
+    "restrictions": "<p><strong>Medida:</strong> Menor a 0.90 metros NO puede ingresar, si mide entre 0.90 y 1.20 metros debe de ir acompañado de un adulto. Mayor a 1.20 metros puede ingresar solo.</p><p><strong>Nota:</strong> Bolsos pequeños, carteras, gorras y lentes deberán dejarlos en el casillero. Permitido el uso de lentes con cinta sujetadora o ganchos sujetadores. Permitido el uso de sandalias o zapatos sueltos.</p><p>Además aplican las normas generales del parque.</p>"
+  }
+]
