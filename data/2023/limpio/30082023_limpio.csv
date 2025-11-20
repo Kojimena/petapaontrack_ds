@@ -1,0 +1,26 @@
+juego,9:00 ciclos,9:00 asistencia,10:00 ciclos,10:00 asistencia,11:00 ciclos,11:00 asistencia,12:00 ciclos,12:00 asistencia,13:00 ciclos,13:00 asistencia,14:00 ciclos,14:00 asistencia,15:00 ciclos,15:00 asistencia,16:00 ciclos,16:00 asistencia,17:00 ciclos,17:00 asistencia,18:00 ciclos,18:00 asistencia,ciclos total,asistencia total,fecha,es_festivo,nombre_festivo,temperatura_max,temperatura_min,condiciones_cielo,prob_precipitacion,promedio_asistencia_por_hora,promedio_ciclos_por_hora
+Balloon Wheel,0,0,0,0,0,0,0,0,0,0,2,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,4.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,0.7272727272727273,0.36363636363636365
+Samba Balloon,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,0.0,0.0
+Loco Bus,0,0,0,0,0,0,1,5,0,0,2,11,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,16.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,2.909090909090909,0.5454545454545454
+Dragon,2,27,8,78,9,93,10,67,7,42,7,66,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,43.0,373.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,67.81818181818181,7.818181818181818
+Comanche,3,35,6,140,9,194,8,128,4,13,8,39,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,38.0,549.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,99.81818181818181,6.909090909090909
+Ratón Loroco,5,18,77,262,75,248,36,108,8,24,5,19,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,206.0,679.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,123.45454545454545,37.45454545454545
+Remolino,27,128,48,266,48,230,30,135,15,65,30,127,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,198.0,951.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,172.9090909090909,36.0
+Rascacielos,8,139,10,178,8,144,10,167,8,71,8,94,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,52.0,793.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,144.1818181818182,9.454545454545455
+Tronco Splash,12,39,107,302,72,207,36,93,12,34,50,134,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,289.0,809.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,147.0909090909091,52.54545454545455
+Bumperazo,2,34,9,163,8,200,9,210,9,261,8,181,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,45.0,1049.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,190.72727272727272,8.181818181818182
+Brincanguro,4,13,7,95,8,101,5,18,2,15,6,27,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,32.0,269.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,48.90909090909091,5.818181818181818
+Moto Bala,8,96,22,264,20,240,19,202,14,94,13,120,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,96.0,1016.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,184.72727272727272,17.454545454545453
+Convoy,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,0.0,0.0
+Bumpercitos,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,0.0,0.0
+Bici Magica,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,0.0,0.0
+Polo Norte,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,0.0,0.0
+Sol De Mi Barrio,1,32,3,59,5,30,7,77,5,25,5,40,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,26.0,263.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,47.81818181818182,4.7272727272727275
+Tifón,4,63,7,92,4,53,5,68,3,23,4,47,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,27.0,346.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,62.90909090909091,4.909090909090909
+Carrusel,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,0.0,0.0
+Trencito,0,0,0,0,3,19,5,63,5,53,4,52,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,17.0,187.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,34.0,3.090909090909091
+El Revoloteo,5,37,3,30,6,57,7,45,5,53,5,56,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,31.0,278.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,50.54545454545455,5.636363636363637
+Guerra Pirata,2,8,3,10,3,32,6,49,5,31,6,34,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,25.0,164.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,29.818181818181817,4.545454545454546
+Faro Saltarín,0,0,0,0,2,8,2,10,3,17,3,9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,10.0,44.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,8.0,1.8181818181818181
+El Relámpago,10,80,31,279,36,319,23,188,1,6,13,88,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,114.0,960.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,174.54545454545453,20.727272727272727
+Casichoco,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2023-08-30,False,Ninguno,25.0,16.0,Moderate or heavy rain shower,0,0.0,0.0

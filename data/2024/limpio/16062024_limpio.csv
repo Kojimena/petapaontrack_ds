@@ -1,0 +1,26 @@
+juego,9:00 ciclos,9:00 asistencia,10:00 ciclos,10:00 asistencia,11:00 ciclos,11:00 asistencia,12:00 ciclos,12:00 asistencia,13:00 ciclos,13:00 asistencia,14:00 ciclos,14:00 asistencia,15:00 ciclos,15:00 asistencia,16:00 ciclos,16:00 asistencia,17:00 ciclos,17:00 asistencia,18:00 ciclos,18:00 asistencia,ciclos total,asistencia total,fecha,es_festivo,nombre_festivo,temperatura_max,temperatura_min,condiciones_cielo,prob_precipitacion,promedio_asistencia_por_hora,promedio_ciclos_por_hora
+Balloon Wheel,0,0,6,41,3,20,2,12,2,31,1,11,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,14.0,115.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,20.90909090909091,2.5454545454545454
+Samba Balloon,2,6,5,25,6,18,0,0,4,17,2,18,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,19.0,84.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,15.272727272727273,3.4545454545454546
+Loco Bus,0,0,5,20,4,22,2,5,4,27,1,3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,16.0,77.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,14.0,2.909090909090909
+Dragon,0,0,2,32,4,65,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,97.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,17.636363636363637,1.0909090909090908
+Comanche,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,0.0,0.0
+Ratón Loroco,0,0,36,131,36,133,0,0,28,97,19,71,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,119.0,432.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,78.54545454545455,21.636363636363637
+Remolino,7,25,26,101,23,115,0,0,30,121,2,10,6.0,29.0,0.0,0.0,0.0,0.0,0.0,0.0,94.0,401.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,72.9090909090909,17.09090909090909
+Rascacielos,3,39,5,65,8,108,0,0,6,40,6,11,6.0,76.0,2.0,34.0,0.0,0.0,0.0,0.0,36.0,373.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,67.81818181818181,6.545454545454546
+Tronco Splash,15,42,30,79,30,103,68,186,36,100,36,94,34.0,85.0,9.0,24.0,10.0,27.0,0.0,0.0,268.0,740.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,134.54545454545453,48.72727272727273
+Bumperazo,0,0,2,9,7,139,7,190,8,148,8,167,7.0,143.0,8.0,174.0,3.0,38.0,0.0,0.0,50.0,1008.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,183.27272727272728,9.090909090909092
+Brincanguro,0,0,6,79,5,86,5,54,4,62,5,65,5.0,51.0,3.0,19.0,0.0,0.0,0.0,0.0,33.0,416.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,75.63636363636364,6.0
+Moto Bala,0,0,16,160,12,125,0,0,10,117,4,42,12.0,131.0,0.0,0.0,0.0,0.0,0.0,0.0,54.0,575.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,104.54545454545455,9.818181818181818
+Convoy,0,0,4,10,2,3,5,12,5,16,4,10,2.0,5.0,3.0,9.0,1.0,1.0,0.0,0.0,26.0,66.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,12.0,4.7272727272727275
+Bumpercitos,0,0,3,8,6,32,2,4,1,5,2,4,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,15.0,54.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,9.818181818181818,2.727272727272727
+Bici Magica,0,0,3,8,1,2,1,2,2,8,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,7.0,20.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,3.6363636363636362,1.2727272727272727
+Polo Norte,2,3,5,13,5,9,5,10,2,5,3,5,7.0,13.0,0.0,0.0,0.0,0.0,0.0,0.0,29.0,58.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,10.545454545454545,5.2727272727272725
+Sol De Mi Barrio,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,0.0,0.0
+Tifón,1,6,9,61,8,107,4,41,4,18,5,40,5.0,53.0,2.0,6.0,4.0,37.0,0.0,0.0,42.0,369.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,67.0909090909091,7.636363636363637
+Carrusel,0,0,8,23,5,24,11,68,4,19,4,16,4.0,17.0,4.0,37.0,3.0,24.0,0.0,0.0,43.0,228.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,41.45454545454545,7.818181818181818
+Trencito,1,10,4,29,4,59,0,0,6,163,3,31,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,18.0,292.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,53.09090909090909,3.272727272727273
+El Revoloteo,0,0,5,78,7,62,4,34,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,16.0,174.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,31.636363636363637,2.909090909090909
+Guerra Pirata,0,0,0,0,4,22,8,56,8,37,1,3,5.0,41.0,4.0,39.0,2.0,17.0,0.0,0.0,32.0,215.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,39.09090909090909,5.818181818181818
+Faro Saltarín,7,40,8,47,4,23,4,38,8,96,2,19,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,33.0,263.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,47.81818181818182,6.0
+El Relámpago,0,0,27,219,7,55,0,0,6,46,3,27,6.0,45.0,0.0,0.0,0.0,0.0,0.0,0.0,49.0,392.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,71.27272727272727,8.909090909090908
+Casichoco,0,0,4,17,9,29,8,53,6,32,5,36,7.0,20.0,5.0,26.0,2.0,5.0,0.0,0.0,46.0,218.0,2024-06-16,False,Ninguno,21.0,17.0,Moderate or heavy rain shower,0,39.63636363636363,8.363636363636363
